@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Caption/cta area-->
+<div class="index-pg">
+    <div class="background-img">
+        <div class="welcome-text ">
+            <h3>Aotearoa</h3>
+            <p class="new-zealand white-text"><strong>New Zealand<br>"Land Of The Long White Cloud"</p></strong>
+            <!--Welcome Section-->
+            <div class="join-text white-text">
+                <div class="white-text">
+                    <p>Kia Ora & Welcome to Kiwi Lingo!<br>Your Ultimate Online Guide to Kiwi Phrases and Words<br>Join
+                        Today to Add Your
+                        Word or Phrase!</p>
+                    <a href="{{ url_for('get_words') }}" class="btn guide-btn waves-effect waves-light red">View Guide
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="img-description hide-on-small-only">
+            <h5>Aoraki/Mount Cook</h5>
+            <p>Lake Pukaki, South Island NZ</p>
+        </div>
+    </div>
+    <!--About Kiwi Lingo-->
+    <div class="about-kiwi container center-align">
+        <h2>What's Kiwi Lingo?</h2>
+        <i class="fas fa-kiwi-bird fa-3x"></i><i class="fas fa-kiwi-bird fa-3x icon-flipped"></i>
+        <div class="description">
+            <p>
+                Ever been in an awkward conversation with a Kiwi (New Zealander) and you didn't know what the heck to
+                respond?
+            </p>
+            <p>
+                Maybe you have just returned from Middle Earth and collected some choice words you want to store...
+            </p>
+            <p>
+                Let our handy guide, Kiwi Lingo, be your go-to guide for everything spoken in New Zealand!
+            </p>
+        </div>
+        <a href="{{ url_for('register') }}" class="btn waves-effect waves-light red">Register</a>
+    </div>
+</div>
+{% endblock %}
